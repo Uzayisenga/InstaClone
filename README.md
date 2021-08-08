@@ -3,7 +3,7 @@ Rails basic exam 2 Instagram clone
 ### Requirements
 * Backend
   * ~~Ruby on Railsを使ったアプリケーションであること~~
-  * ~~pictureの投稿・投稿確認・編集・一覧表示・詳細画面・削除機能があること（CRUD機能　--Rails入門13~~~
+  * ~~pictureの投稿・投稿確認・編集・一覧表示・詳細画面・削除機能があること（CRUD機能　--Rails入門13～~~
   * userのプロフィール画像が登録できること
   * 他人の投稿・プロフィールが編集できないように、controllerでアクセス制限をかけ、さらにviewではボタンを非表示にすること。
   * ログイン機能があること（deviseなどのgemは使わないこと --Rails基礎　ログインシステム
