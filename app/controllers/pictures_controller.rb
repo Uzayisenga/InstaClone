@@ -21,7 +21,7 @@ class PicturesController < ApplicationController
       render :new
     else
       if @picture.save
-        redirect_to pictures_path, notice: "Your Pictures was posted!"
+        redirect_to pictures_path, notice: "Your Picture was posted!"
       else
         render :new
       end
