@@ -6,7 +6,7 @@ Rails basic exam 2 Instagram clone
   * ~~pictureの投稿・投稿確認・編集・一覧表示・詳細画面・削除機能があること（CRUD機能　--Rails入門13～~~
   * userのプロフィール画像が登録できること
   * 他人の投稿・プロフィールが編集できないように、controllerでアクセス制限をかけ、さらにviewではボタンを非表示にすること。
-  * ログイン機能があること（deviseなどのgemは使わないこと --Rails基礎　ログインシステム
+  * ~~ログイン機能があること（deviseなどのgemは使わないこと --Rails基礎　ログインシステム~~
   * pictureを投稿した際、投稿者に確認メールが届くようにすること --Rails基礎 ActionMailer
   * UserとPictureをひも付けて誰がPictureを投稿したか分かるようにすること --Rails基礎 アソシエーション
   * ~~画像と文章が投稿できるようにすること  --Rails基礎画像アップロードシステム~~
