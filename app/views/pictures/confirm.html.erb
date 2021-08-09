@@ -1,9 +1,15 @@
 <h3>Are you sure?</h3>
 <%= form_with(model: @picture, url: pictures_path, local: true) do |form| %>
   <%= form.hidden_field :content %>
-  <%= form.hidden_field :image %>
+  <%= image_tag(@picture.image.url) if @picture.image && @picture.image.url %>
+  <%= form.hidden_field :image_cache %>
   <p><%= @picture.content %></p>
   <p><%= @picture.image %></p>
   <%= form.submit "Submit" %>
+<% end %>
+
+<%= form_with(model: @picture, url: new_picture_path, local: true, method: "get") do |form| %>
+  <%= form.hidden_field :content %>
+  <%= form.hidden_field :image_cache %>
   <%= form.submit "Back", name: 'back' %>
 <% end %>
