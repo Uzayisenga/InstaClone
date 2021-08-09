@@ -10,7 +10,7 @@ gem 'rails', '~> 5.2.5'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt'
 # gem 'mini_magick', '~> 4.8'
 # gem 'capistrano-rails', group: :development
 gem 'carrierwave'
