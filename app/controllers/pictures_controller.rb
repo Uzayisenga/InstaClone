@@ -1,5 +1,5 @@
 class PicturesController < ApplicationController
-  before_action :set_picture, only: %i[ show edit update destroy ]
+  before_action :set_picture, only: [:show, :edit, :update, :destroy]
 
   def index
     @pictures = Picture.all
@@ -7,6 +7,7 @@ class PicturesController < ApplicationController
 
   def show
     @favorite = current_user.favorites.find_by(picture_id: @picture.id)
+    @picture = current_user.pictures.build(picture_params)
   end
 
   def new
