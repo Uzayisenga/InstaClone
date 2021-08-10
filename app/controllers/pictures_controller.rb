@@ -8,7 +8,6 @@ class PicturesController < ApplicationController
 
   def show
     @favorite = current_user.favorites.find_by(picture_id: @picture.id)
-    @picture = current_user.pictures.build(picture_params)
   end
 
   def new
