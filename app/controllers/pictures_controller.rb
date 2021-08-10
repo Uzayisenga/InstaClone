@@ -1,4 +1,5 @@
 class PicturesController < ApplicationController
+  skip_before_action :login_required, only: [:index]
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
 
   def index
