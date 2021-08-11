@@ -28,7 +28,7 @@ class PicturesController < ApplicationController
       render :new
     else
       if @picture.save
-        # PictureMailer.picture_mail(@picture).deliver
+        PictureMailer.picture_mail(@picture).deliver
         redirect_to pictures_path, notice: "Your Picture was posted!"
       else
         render :new
