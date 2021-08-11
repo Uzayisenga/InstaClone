@@ -13,7 +13,7 @@
     <tbody>
       <% @favorites.each do |favorite| %>
         <tr>
-          <td><%= favorite.user.name %></td>
+          <td><%= favorite.picture.user.name %></td>
           <td><%= favorite.picture.content %></td>
           <td><%= image_tag favorite.picture.image.url if favorite.picture.image.present? %></td>
         </tr>
