@@ -19,6 +19,7 @@ class PicturesController < ApplicationController
   end
 
   def edit
+    redirect_to pictures_path unless current_user.id == @picture.user_id
   end
 
   def create
@@ -48,10 +49,14 @@ class PicturesController < ApplicationController
   end
 
   def destroy
+    if current_user.id == @picture.user_id
     @picture.destroy
     respond_to do |format|
       format.html { redirect_to pictures_url, notice: "Picture was successfully destroyed." }
       format.json { head :no_content }
+    end
+    else
+      redirect_to pictures_path
     end
   end
 
