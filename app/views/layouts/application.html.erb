@@ -10,26 +10,27 @@
   </head>
 
   <body>
-    <header>
-      <h2>InstaClone</h2>
-      <img src="" alt="">
-      <div class="">
-      <ul>
-        <li><%= link_to "Top", root_path %></li>
-        <li><%= link_to "Pictures", pictures_path %></li>
-        <% if logged_in? %>
-          <li><%= link_to "Profile", user_path(current_user.id) %></li>
-          <li><%= link_to "Logout", session_path(current_user.id), method: :delete %></li>
-        <% else %>
-          <li><%= link_to "Sign up", new_user_path %></li>
-          <li><%= link_to "Login", new_session_path %></li>
-        <% end %>
-    </ul>
+    <div class="container-fluid">
+      <header>
+        <h2>InstaClone</h2>
+        <nav class="menu">
+          <ul class="row">
+            <li class="col-sm-3"><%= link_to "Pictures", pictures_path %></li>
+            <li class="col-sm-3"><%= link_to "Favorites", favorites_path %></li>
+            <% if logged_in? %>
+              <li class="col-sm-3"><%= link_to "Profile", user_path(current_user.id) %></li>
+              <li class="col-sm-3"><%= link_to "Logout", session_path(current_user.id), method: :delete %></li>
+            <% else %>
+              <li class="col-sm-3"><%= link_to "Sign up", new_user_path %></li>
+              <li class="col-sm-3"><%= link_to "Login", new_session_path %></li>
+            <% end %>
+          </ul>
+        </nav>
+      </header>
+      <%= yield %>
+      <footer>
+        <p>Directed by 4E78</p>
+      </footer>
     </div>
-  </header>
-    <%= yield %>
-    <footer>
-      <p>Directed by 4E78</p>
-    </footer>
   </body>
 </html>
