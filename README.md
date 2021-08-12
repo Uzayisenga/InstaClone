@@ -7,7 +7,7 @@ Rails basic exam 2 Instagram clone
   * ~~userのプロフィール画像が登録できること~~
   * ~~他人の投稿・プロフィールが編集できないように、controllerでアクセス制限をかけ、さらにviewではボタンを非表示にすること。~~
   * ~~ログイン機能があること（deviseなどのgemは使わないこと --Rails基礎　ログインシステム~~
-  * pictureを投稿した際、投稿者に確認メールが届くようにすること --Rails基礎 ActionMailer
+  * ~~pictureを投稿した際、投稿者に確認メールが届くようにすること --Rails基礎 ActionMailer~~
   * ~~UserとPictureをひも付けて誰がPictureを投稿したか分かるようにすること --Rails基礎 アソシエーション~~
   * ~~画像と文章が投稿できるようにすること  --Rails基礎画像アップロードシステム~~
   * ~~pictureをお気に入りし、お気に入りのpictureの一覧画面を、新しいルーティングのページで作成すること --Rails基礎 アソシエーション3~~
@@ -18,7 +18,7 @@ Rails basic exam 2 Instagram clone
   * ~~変数名やアソシエーション名は具体的で、一目見て概ね理解できる名前にすること~~
   * ~~updateなどの記述の際、バリデーションが発火した時の処理も考慮しておくこと。（レンダリングするviewが見つけられなくてエラーになったりしないように注意する）~~
   * ~~あなたの地域のタイムゾーンに設定すること（下記ヒントあり）~~
-  * 追加するライブラリは、letter_opener_web、bootstrap、jquery、bcrypt、carrier_wave、デバッグ関係に限定すること
+  * ~~追加するライブラリは、letter_opener_web、bootstrap、jquery、bcrypt、carrier_wave、デバッグ関係に限定すること~~
 
 * Frontend
   * HTML、CSS、bootstrapを使用して、現実のInstagramに似せたデザインにすること（任意　詳しくは後述　--Rails基礎 Bootstrap
