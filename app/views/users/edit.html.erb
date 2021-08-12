@@ -11,20 +11,20 @@
     </div>
   <% end %>
 
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :email %>
-  <%= f.email_field :email %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %><br><br><br>
+  <%= f.label :email %><br>
+  <%= f.email_field :email %><br><br><br>
 
-  <%= f.label :image %>
-  <%= image_tag @user.image.url if @user.image.present? %>
-  <%= f.file_field :image %>
-  <%= f.hidden_field :image_cache %>
+  <%= f.label :image %><br>
+  <%= image_tag @user.image.url if @user.image.present? %><br><br><br>
+  <%= f.file_field :image %><br>
+  <%= f.hidden_field :image_cache %><br><br><br>
 
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
+  <%= f.label :password %><br>
+  <%= f.password_field :password %><br><br><br>
+  <%= f.label :password_confirmation %><br>
+  <%= f.password_field :password_confirmation %><br><br><br>
   <div class="submit_record">
     <p><%= f.submit "Edit" %></p>
   </div>

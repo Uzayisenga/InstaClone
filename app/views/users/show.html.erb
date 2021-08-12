@@ -1,12 +1,12 @@
 <h1><%= @user.name %>'s Page</h1>
 <p>email address: <%= @user.email %></p>
-<p>
-  <strong>image:</strong>
-  <%= image_tag @user.image.url if @user.image.present? %>
-</p>
+<p><%= image_tag @user.image.url if @user.image.present? %></p>
 
 <br>
-<p><%= link_to 'Edit Your Profile', edit_user_path(@user.id) %></p>
+<button type="button" class="btn btn-default">
+  <%= link_to 'Edit Your Profile', edit_user_path(@user.id) %>
+</button>
+
 <br><br><br>
-<%= link_to 'Pictures', pictures_path %>
+<%= link_to 'Pictures', pictures_path %> |
 <%= link_to 'New Picture', new_picture_path %>
